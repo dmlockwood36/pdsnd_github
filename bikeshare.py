@@ -32,7 +32,8 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
 
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('\033[1m' + 'Hello! Let\'s explore some US bikeshare data!')
+    print('\033[0m')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         try:
@@ -49,8 +50,14 @@ def get_filters():
             else:
                 break
 
+<<<<<<< HEAD
     # get user input for month (all, january, february, ... , june)
     # check for potentential formatting issues
+||||||| 22f7dc0
+    # get user input for month (all, january, february, ... , june)
+=======
+    # get user input for month (all, January, February, March ... , june)
+>>>>>>> refactoring
     while True:
         try:
             month = input('\nEnter month (All, January, February, March, April, May, June): ')
@@ -65,8 +72,14 @@ def get_filters():
             else:
                 break
 
+<<<<<<< HEAD
     # get user input for day of week (all, monday, tuesday, ... sunday)
     # check for potential formatting issues
+||||||| 22f7dc0
+    # get user input for day of week (all, monday, tuesday, ... sunday)
+=======
+    # get user input for day of week (all, Monday, Tuesday, ... Sunday)
+>>>>>>> refactoring
     while True:
         try:
             day = input('\nEnter day (All, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday): ')
@@ -269,11 +282,11 @@ def main():
         view_summary(city, month, day)
         view_data(df)
         time_stats(df)
-        input("Press enter to continue")
+        input("Press enter to continue.")
         station_stats(df)
-        input("Press enter to continue")
+        input("Press enter to continue.")
         trip_duration_stats(df)
-        input("Press enter to continue")
+        input("Press enter to continue.")
         user_stats(df, city)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
