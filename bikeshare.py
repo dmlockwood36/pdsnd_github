@@ -50,6 +50,7 @@ def get_filters():
                 break
 
     # get user input for month (all, january, february, ... , june)
+    # check for potentential formatting issues
     while True:
         try:
             month = input('\nEnter month (All, January, February, March, April, May, June): ')
@@ -65,6 +66,7 @@ def get_filters():
                 break
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
+    # check for potential formatting issues
     while True:
         try:
             day = input('\nEnter day (All, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday): ')
